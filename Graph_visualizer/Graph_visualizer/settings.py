@@ -92,7 +92,7 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(os.path.join(BASE_DIR.parent, ".env"))
 
-SECRET_KEY = config("SECRET_KEY")
+SECRET_KEY = config("SECRET_KEY", default="django-insecure-$@yzdw=j&5v4@$c$e*&k722x&r$#&rs82n9#r^+#r($jq@q0!1)
 DEBUG = config("DEBUG", default=True, cast=bool)
 ALLOWED_HOSTS = ["*"]
 
@@ -141,8 +141,8 @@ ASGI_APPLICATION = 'Graph_visualizer.asgi.application'
 
 # DB_HOST = config("HOST", default="mongodb://localhost:27018/")
 MONGO_URL = config("MONGO_URL", default="mongodb://localhost:27018/")
-DB_USER = config("USERNAME", default="")
-DB_PASS = config("PASSWORD", default="")
+DB_USER = config("USERNAME", default="VoAnhNhat")
+DB_PASS = config("PASSWORD", default="voanhnhat@16122006")
 DB_AUTH_SRC = config("AUTHSOURCE", default="admin")
 DB_AUTH_MECH = config("AUTHMECHANISM", default="SCRAM-SHA-1")
 
