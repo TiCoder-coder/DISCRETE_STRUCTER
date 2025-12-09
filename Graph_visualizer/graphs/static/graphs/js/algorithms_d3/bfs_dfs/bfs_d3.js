@@ -74,7 +74,8 @@ function runBipartiteCheck() {
     console.log("Đang gửi Payload kiểm tra Hai phía:", payload);
     document.getElementById("infoContent").innerHTML = "Đang kiểm tra đồ thị hai phía...";
 
-    const API_URL = "http://127.0.0.1:8000/api/graph/bfs/";
+    const API_URL = "/api/graph/bfs/";
+
 
     fetch(API_URL, {
         method: "POST",
@@ -141,7 +142,8 @@ function runBFS() {
     console.log("Đang gửi Payload:", payload);
     document.getElementById("infoContent").innerHTML = "Đang xử lý...";
 
-    const API_URL = "http://127.0.0.1:8000/api/graph/bfs/";
+    const API_URL = "/api/graph/bfs/";
+
 
     fetch(API_URL, {
         method: "POST",
